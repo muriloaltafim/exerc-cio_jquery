@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lista de tarefas simples e interativa">
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <header>
+        <h1>Lista de tarefas</h1>
+    </header>
+
+    <main>
+        <form id="task-form">
+            <div class="input-group">
+                <label for="task-input" class="visually-hidden">Nova tarefa</label>
+                <input 
+                    type="text" 
+                    id="task-input" 
+                    name="task"
+                    required 
+                    placeholder="Adicione uma tarefa"
+                    autocomplete="off"
+                >
+                <button type="submit">Adicionar</button>
+            </div>
+        </form>
+
+        <section>
+            <h2 class="visually-hidden">Lista de tarefas</h2>
+            <ul id="task-list"></ul>
+        </section>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
